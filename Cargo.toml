@@ -1,0 +1,16 @@
+[package]
+name = "talkers"
+version = "0.1.0"
+authors = ["Max R. P. Grossmann <talkers@max.pm>"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+description = "A library for building a TCP chat with multiple simultaneous connections and a CLI chat app with SOCKS5 support"
+readme = "README.md"
+homepage = "https://github.com/mrpg/talkers"
+repository = "https://github.com/mrpg/talkers"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sha2 = "0.9.1"
+socks = "0.3.2"
