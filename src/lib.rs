@@ -1,4 +1,4 @@
-//! This crate contains the mechanics for building a simple TCP chat with support for multiple connections at once. Messages with length of up to 1048576 octets are supported, as well as much larger file transfers. Integrity checking is embedded into *talkers*. Included is a sample high-latency chat application (the *talkers* chat program) that supports proxying over SOCKS5 (e.g. using Tor).
+//! This crate contains the mechanics for building a simple TCP chat with support for multiple connections at once. Messages with length of up to 1048576 octets are supported, as well as much larger file transfers. Integrity checking is embedded into *talkers*. Included is a sample high-latency chat application (the *talkers* chat program) that supports proxying over SOCKS5 (e.g. to use Tor onion services).
 //!
 //! A "message" is any valid UTF-8 string (of up to 1048576 octets); a "file" is any string of octets. *talkers* allows customization using closures or function pointers that are invoked when certain events occur.
 //!

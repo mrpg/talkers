@@ -3,6 +3,8 @@
 [![Crates.io](https://img.shields.io/crates/v/bus.svg)](https://crates.io/crates/talkers)
 [![Documentation](https://docs.rs/bus/badge.svg)](https://docs.rs/talkers/)
 
+This crate contains the mechanics for building a simple TCP chat with support for multiple connections at once. Messages with length of up to 1048576 octets are supported, as well as much larger file transfers. Integrity checking is embedded into *talkers*. Included is a sample high-latency chat application (the *talkers* chat program) that supports proxying over SOCKS5 (e.g. to use Tor onion services).
+
 See [the documentation] for more details.
 
   [the documentation]: https://docs.rs/talkers/
