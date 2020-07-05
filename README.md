@@ -7,6 +7,12 @@ See [the documentation] for more details.
 
   [the documentation]: https://docs.rs/talkers/
 
+## Using the app
+
+Simply run `cargo run --release`.
+
+You can run `cargo run --release -- --help` to see which arguments are supported. For example, `cargo run --release -- -x 9150` would listen on 0.0.0.0:50505 for incoming connections (the default), but use the SOCKS5 proxy on port 9150 to connect to peers.
+
 ## How to use in your own project
 
 To get started, it's easiest to take a look at the ["record" example] as well as the [app itself]. The app is a minimalist yet full-fledged CLI chat application that can connect using a SOCKS5 proxy. The ["record" example] waits for a connection and then records all messages received within a few seconds in a Vec.
